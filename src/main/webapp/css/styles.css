@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". main .";
+
+}
+
+.content{
+    grid-area: main;
+}
+#btn{
+    grid-area: btn;
+}
+
+#lName{
+    grid-area: lName;
+}
+
+#fName{
+    grid-area: fName;
+}
+
+#pass{
+    grid-area: pass;
+}
+
+#confPass{
+    grid-area: confPass;
+}
+
+#username{
+    grid-area: username;
+}
+
+#email{
+    grid-area: email;
+}
+
+form{
+    width: 60%;
+    height: 300px;
+    display: grid;
+    grid-template-areas:
+    "fName lName"
+    "email  email"
+    "username  username"
+    "pass  pass"
+    "confPass  confPass"
+    "btn  .";
+    gap: 20px;
+}
